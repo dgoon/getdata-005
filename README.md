@@ -46,4 +46,4 @@ Only tested in **MacOSX**. It may work in linux environment too, but **not** tes
 
 ## Comments
 
-Because git is not suitable to store big data files, rawdata is **not** included in the repository.
+Because git is not suitable to store big data files, rawdata is **not** included in the repository. [features_info.txt](./data/UCI HAR Dataset/features_info.txt) is specially picked to be put in the repository, because it has metadata description needed for tidy dataset's [Codebook](CodeBook.md).
