@@ -1,3 +1,7 @@
+## Motiviation
+
+Course project of [Getting and Cleaning Data](https://class.coursera.org/getdata-005) class.
+
 ## Purpose
 
 This project's purpose is to generate tidy dataset from the provided rawdata.
