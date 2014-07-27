@@ -4,7 +4,7 @@ This project's purpose is to generate tidy dataset from the provided rawdata.
 
 The tidy dataset should be summarized as average of each data column by the two factor: 'Subject' and 'Activity'. The feature vector is originally 561 dimensions in rawdata. Only 66 features are selected.
 
-Detailed information about each variables is in CodeBook.md and rawdata's features\_info.txt.
+Detailed information about each variables is in *CodeBook.md* and rawdata's *features\_info.txt*.
 
 ## Requirements
 
@@ -16,7 +16,7 @@ Detailed information about each variables is in CodeBook.md and rawdata's featur
 ## Instructions
 
 The following instructions will reproduce the results.
-Only tested in **MacOSX**. It may work in linux environment too, but not tested.
+Only tested in **MacOSX**. It may work in linux environment too, but **not** tested.
 
 1. Take the rawdata file and unzip it.
 
@@ -30,7 +30,7 @@ Only tested in **MacOSX**. It may work in linux environment too, but not tested.
 
     `> source("prepare_data.R")        # in interactive R session`
 
-    will work. If you're not in MacOSX, R's *download.file* function could fail. In that case, please download the file in the directory './data' and unzip it in the directory.
+    will work. If you're not in MacOSX, R's `download.file` function could fail. In that case, please download the file in the directory './data' and unzip it in the directory.
 
     Once the rawdata is ready, *prepare_data.R* will not redownload.
 
