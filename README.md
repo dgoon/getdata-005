@@ -6,8 +6,6 @@ Course project of [Getting and Cleaning Data](https://class.coursera.org/getdata
 
 This project's purpose is to generate tidy dataset from the provided rawdata.
 
-The tidy dataset should be summarized as average of each data column by the two factor: 'Subject' and 'Activity'. The feature vector is originally 561 dimensions in rawdata. Only 66 features are selected.
-
 Detailed information about each variables is in [CodeBook.md](CodeBook.md) and rawdata's [features\_info.txt](data/UCI HAR Dataset/features_info.txt).
 
 ## Requirements
