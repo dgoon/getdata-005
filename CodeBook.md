@@ -6,12 +6,12 @@ Generated tidy dataset is stored in the file: ./data/tidy_dataset.csv.txt. \
 It is CSV format with column names in the first row.
 If the tidy dataset is generated correctly, its dimension must be 180x68.
 
-* 66 columns are data. Data columns are averaged from rawdata columns with same name, which were in continuous numeric values.
-* 2 columns - Subject, Activity are the grouping key. There are 30 subject codes(1~30) and 6 types of Activity, so there are 180 averaged rows.
+* 66 columns are data. Data columns are averaged from rawdata columns with **same** name, which were in continuous numeric values.
+* 2 columns - **Subject**, **Activity** are the grouping key. There are 30 subject codes(1~30) and 6 types of Activity, so there are 180 averaged rows.
 
 ## General variable description
 
-Generated tidy dataset uses same variable names as rawdata, selecting only *mean* and *stddev* values.
+Generated tidy dataset uses same variable names as rawdata, selecting only **mean** and **stddev** values.
 
 The following is copied from features_info.txt in rawdata.
 
@@ -44,8 +44,11 @@ The following is copied from features_info.txt in rawdata.
 
 ## Complete list of columns
 
-* Subject
-* Activity
+* Subject: Integer ranged from 1 to 30
+* Activity: String, One of (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+
+The following variables are all real numbers.
+
 * tBodyAcc-mean()-X
 * tBodyAcc-mean()-Y
 * tBodyAcc-mean()-Z
