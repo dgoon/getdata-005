@@ -44,7 +44,7 @@ Only tested in **MacOSX** and **R Ver 3.0.2**. It may work in linux environment 
 
     or
 
-    `> source("run_analysis.R")         # in interactiv R session`
+    `> source("run_analysis.R")         # in interactive R session`
 
     [*run_analysis.R*](run_analysis.R) will process rawdata to generate the file: [./data/tidy_dataset.csv.txt](data/tidy_dataset.csv.txt)
 
