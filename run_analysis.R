@@ -43,9 +43,8 @@ data_cols = sd_names[grep("*-mean\\(\\)|*-std\\(\\)", sd_names)]
 tidy_dataset = ddply(selected_dataset, group_cols,
         function (x) colSums(x[data_cols]))
 
-# Write tidy_dataset.csv, without header
+# Write tidy_dataset.csv, with header
 print('Writing tidy dataset to "./data/tidy_dataset.csv.txt",', quote=FALSE)
-print('  and column info to "./data/tidy_dataset_col_names.txt".', quote=FALSE)
 write.table(tidy_dataset, "./data/tidy_dataset.csv.txt", sep=",",
         row.names=FALSE, col.names=TRUE, quote=FALSE)
 write(date(), file='./data/tidy_dataset.csv.txt.dateGenerated')
