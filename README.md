@@ -9,7 +9,8 @@ Detailed information about each variables is in [CodeBook.md](CodeBook.md) and r
 ## Requirements
 
 * library(plyr): join, ddply
-* curl(MacOSX) or wget(linux)
+* curl/wget for downloading
+* unzip
 * Initial rawdata downloading requires network connection (60MB)
 * About 350MB of disk space including downloaded file.
 
