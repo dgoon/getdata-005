@@ -38,13 +38,13 @@ Only tested in **MacOSX** and **R Ver 3.0.2**. It may work in linux environment 
 
     Once the rawdata is ready, [*prepare_data.R*](prepare_data.R) will not redownload.
 
-2. Execute [*run\_analysis.R*](run_analysis.R)
+2. Execute [*run_analysis.R*](run_analysis.R)
 
     `$ R --quiet -f run\_analysis.R      # in terminal`
 
     or
 
-    `> source("run\_analysis.R")         # in interactiv R session`
+    `> source("run_analysis.R")         # in interactiv R session`
 
     [*run_analysis.R*](run_analysis.R) will process rawdata to generate the file: [./data/tidy_dataset.csv.txt](data/tidy_dataset.csv.txt)
 

@@ -39,7 +39,7 @@ selected_dataset = cbind(x_selected, s_full, y_full)
 print("Summarizing combined dataset by ('Subject', 'Activity')", quote=FALSE)
 sd_names = names(selected_dataset)
 group_cols = c("Subject", "Activity")
-data_cols = sd_names[grep("*-mean|*-std", sd_names)]
+data_cols = sd_names[grep("*-mean\\(\\)|*-std\\(\\)", sd_names)]
 tidy_dataset = ddply(selected_dataset, group_cols,
         function (x) colSums(x[data_cols]))
 
