@@ -40,7 +40,7 @@ Only tested in **MacOSX** and **R Ver 3.0.2**. It may work in linux environment 
 
 2. Execute [*run_analysis.R*](run_analysis.R)
 
-    `$ R --quiet -f run\_analysis.R      # in terminal`
+    `$ R --quiet -f run_analysis.R      # in terminal`
 
     or
 
