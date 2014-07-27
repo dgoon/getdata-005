@@ -2,7 +2,7 @@
 
 This project's purpose is to generate tidy dataset from the provided rawdata.
 
-The tidy dataset should be summarized as average of each data column by the two factor: 'Subject' and 'Activity'. The feature vector is originally 561-dimensions in rawdata. Only 68 features are selected.
+The tidy dataset should be summarized as average of each data column by the two factor: 'Subject' and 'Activity'. The feature vector is originally 561 dimensions in rawdata. Only 66 features are selected.
 
 Detailed information about each variables is in CodeBook.md and rawdata's features\_info.txt.
 
@@ -22,27 +22,27 @@ Only tested in **MacOSX**. It may work in linux environment too, but not tested.
 
     url: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-    prepare_data.R file does both download and unzip for you.
+    *prepare_data.R* file does both download and unzip for you.
 
-    $ R --quiet -f prepare_data.R     # in terminal
-
-    or
-
-    > source("prepare_data.R")        # in interactive R session
-
-    will work. If you're not in MacOSX, R's download.file function could fail. In that case, please download the file in the directory './data' and unzip it in the directory.
-
-    Once the rawdata is ready, prepare_data.R will not redownload.
-
-2. Execute run\_analysis.R
-
-    $ R --quiet -f run\_analysis.R      # in terminal
+    `$ R --quiet -f prepare_data.R     # in terminal`
 
     or
 
-    > source("run\_analysis.R")         # in interactiv R session
+    `> source("prepare_data.R")        # in interactive R session`
 
-    run_analysis.R will process rawdata to generate the file: ./data/tidy_dataset.csv.txt
+    will work. If you're not in MacOSX, R's *download.file* function could fail. In that case, please download the file in the directory './data' and unzip it in the directory.
+
+    Once the rawdata is ready, *prepare_data.R* will not redownload.
+
+2. Execute *run\_analysis.R*
+
+    `$ R --quiet -f run\_analysis.R      # in terminal`
+
+    or
+
+    `> source("run\_analysis.R")         # in interactiv R session`
+
+    *run_analysis.R* will process rawdata to generate the file: *./data/tidy_dataset.csv.txt*
 
 ## Comments
 
