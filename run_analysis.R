@@ -41,7 +41,7 @@ sd_names = names(selected_dataset)
 group_cols = c("Subject", "Activity")
 data_cols = sd_names[grep("*-mean\\(\\)|*-std\\(\\)", sd_names)]
 tidy_dataset = ddply(selected_dataset, group_cols,
-        function (x) colSums(x[data_cols]))
+        function (x) colMeans(x[data_cols]))
 
 # Write tidy_dataset.csv, with header
 print('Writing tidy dataset to "./data/tidy_dataset.csv.txt",', quote=FALSE)
