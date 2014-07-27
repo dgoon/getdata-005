@@ -2,5 +2,6 @@
 .RData
 .Rhistory
 data/*.zip
-data/*.zip.dateDownloaded
+data/*.dateDownloaded
+data/*.dateGenerated
 data/UCI HAR Dataset
