@@ -2,18 +2,18 @@
 
 ## Dataset format
 
-Generated tidy dataset is stored in the file: ./data/tidy_dataset.csv.txt.  
+Generated tidy dataset is stored in the file: [./data/tidy_dataset.csv.txt](./data/tidy_dataset.csv.txt).
 It is in CSV format with column names in the first row.
-If the tidy dataset is generated correctly, its dimension must be **180 x 68**.
+If the tidy dataset is generated correctly, its dimension must be **180(rows) x 68(cols)**.
 
 * 66 columns are data. Data columns are averaged from rawdata columns with **same** name, which were in continuous numeric values.
-* 2 columns - **Subject**, **Activity** are the grouping key. There are 30 subject codes(1~30) and 6 types of Activity, so there are 180 averaged rows.
+* 2 columns - **Subject**, **Activity** - are the grouping key. There are 30 subject codes(1~30) and 6 types of Activity, so there are 180 averaged rows.
 
 ## General variable description
 
-Generated tidy dataset uses same variable names as rawdata, selecting only **mean** and **stddev** values.
+Generated tidy dataset uses **same** variable names as rawdata, selecting only **mean** and **stddev** values.
 
-The following is copied from [features_info.txt](./data/UCI HAR Dataset/features_info.txt) in rawdata.
+The following is copied from [features_info.txt](./data/UCI HAR Dataset/features_info.txt) in rawdata for reference.
 
     The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -45,7 +45,7 @@ The following is copied from [features_info.txt](./data/UCI HAR Dataset/features
 ## Complete list of columns
 
 * Subject: Integer ranged from 1 to 30
-* Activity: String, One of (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+* Activity: String, One of `WALKING`, `WALKING_UPSTAIRS`, `WALKING_DOWNSTAIRS`, `SITTING`, `STANDING`, `LAYING`
 
 The following variables are all real numbers.
 
