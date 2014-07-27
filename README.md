@@ -22,7 +22,7 @@ Only tested in **MacOSX**. It may work in linux environment too, but **not** tes
 
     url: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-    *prepare_data.R* file does both download and unzip for you.
+    [*prepare_data.R*](prepare_data.R) file will do both downloading and unzipping for you.
 
     `$ R --quiet -f prepare_data.R     # in terminal`
 
@@ -30,11 +30,12 @@ Only tested in **MacOSX**. It may work in linux environment too, but **not** tes
 
     `> source("prepare_data.R")        # in interactive R session`
 
-    will work. If you're not in MacOSX, R's `download.file` function could fail. In that case, please download the file in the directory './data' and unzip it in the directory.
+    If you're not in MacOSX, R's `download.file` function could fail. (Check: [*download_data.R*](download_data.R))
+    In that case, please download the file in the directory *./data* and unzip it in the directory **manually**.
 
-    Once the rawdata is ready, *prepare_data.R* will not redownload.
+    Once the rawdata is ready, [*prepare_data.R*](prepare_data.R) will not redownload.
 
-2. Execute *run\_analysis.R*
+2. Execute [*run\_analysis.R*](run_analysis.R)
 
     `$ R --quiet -f run\_analysis.R      # in terminal`
 
@@ -42,7 +43,7 @@ Only tested in **MacOSX**. It may work in linux environment too, but **not** tes
 
     `> source("run\_analysis.R")         # in interactiv R session`
 
-    *run_analysis.R* will process rawdata to generate the file: [./data/tidy_dataset.csv.txt](data/tidy_dataset.csv.txt)
+    [*run_analysis.R*](run_analysis.R) will process rawdata to generate the file: [./data/tidy_dataset.csv.txt](data/tidy_dataset.csv.txt)
 
 ## Comments
 
