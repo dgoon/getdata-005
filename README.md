@@ -17,7 +17,7 @@ Detailed information about each variables is in [CodeBook.md](CodeBook.md) and r
 ## Instructions
 
 The following instructions will reproduce the results.
-Only tested in **MacOSX**. It may work in linux environment too, but **not** tested.
+Only tested in **MacOSX** and **R Ver 3.0.2**. It may work in linux environment too, but **not** tested.
 
 1. Take the rawdata file and unzip it.
 
